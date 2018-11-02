@@ -1,0 +1,191 @@
+
+<div class="modal fade" id="CoffeeDraw" role="dialog">
+		   
+			    <div class="modal-dialog modal-lg">
+			    
+			      <!-- Modal content-->
+			      <div class="modal-content">
+			      <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <div class="modal-footer">
+			        						<div class="modal-frame">
+					      <p class="form_subtitle">填寫抽獎資料<span class="word_break">就有機會品嚐免費咖啡</span></p>
+					   
+					      <form class="form form-horizontal" role="form" id="myform" data-toggle="validator" action="#" target="secret_iframe">
+					          <div class="row">
+					          	<div class="col-md-6 col-xs-12 form-group has-feedback">
+					          		<label for="focusedInput" class="control-label col-xs-3">姓名</label>
+					          		<div class="col-xs-9">
+					          			<input type="text"  class="form-control"  id="NameInput" placeholder="請填正確姓名"  required data-error="請輸入中文，不接受英文及數字，最短2個字" pattern="^[\u4e00-\u9fa5]+$" minlength="2" name="txtName">
+								        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+								        <div class="help-block with-errors"></div>
+					          		</div>
+					          	</div>
+					          	<div class="col-md-6 col-xs-12 form-group has-feedback">
+					          		<label for="focusedInput" class="control-label col-xs-3">性別</label>
+					          		<div class="col-xs-9">
+					          			<select id="SexInput" required class="form-control" required data-error="請選擇性別">
+									        <option value="">請選擇性別</option>
+									        <option>男</option>
+									        <option>女</option>
+					          			</select>
+								        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+								        <div class="help-block with-errors"></div>
+					          		</div>
+					          	</div>
+					      	  </div>
+					          <div class="row">
+					          	<div class="col-md-6 col-xs-12 form-group has-feedback">
+					          		<label for="focusedInput" class="control-label col-xs-3">職業</label>
+					          		<div class="col-xs-9">
+					          			<select id="JobInput" required class="form-control" required data-error="請選擇職業">
+									        <option value="">請選擇職業</option>
+									        <option>學生</option>
+									        <option>上班族</option>
+									        <option>服務業</option>
+									        <option>公職人員</option>
+									        <option>待業</option>
+									        <option>其他</option>
+					          			</select>
+								        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+								        <div class="help-block with-errors"></div>
+					          		</div>
+					          	</div>
+					          	<div class="col-md-6 col-xs-12 form-group has-feedback">
+					          		<label for="focusedInput" class="control-label col-xs-3">年齡</label>
+					          		<div class="col-xs-9">
+					          			<select id="AgeInput" required class="form-control" required data-error="請選擇年齡">
+									        <option value="">請選擇年齡</option>
+									        <option>20歲以下</option>
+									        <option>21-25歲</option>
+									        <option>26-30歲</option>
+									        <option>31-35歲</option>
+									        <option>36-40歲</option>
+									        <option>41-45歲</option>
+									        <option>46-50歲</option>
+									        <option>51-56歲</option>
+									        <option>56歲以上</option>
+					          			</select>
+								        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+								        <div class="help-block with-errors"></div>
+					          		</div>
+					          	</div>
+					      	  </div>
+							  <div class="row">
+					          	<div class="col-md-12 form-group has-feedback">
+					          		<label for="focusedInput" class="control-label col-xs-3">居住地區</label>
+					          		<div class="col-xs-9">
+					          			<select id="CityInput" required class="form-control" required data-error="請選擇居住地">
+									        <option value="">請選擇居住地</option>
+									        <option>基隆市</option>
+									        <option>台北市</option>
+									        <option>新北市</option>
+									        <option>桃園縣</option>
+									        <option>新竹縣市</option>
+									        <option>苗栗縣</option>
+									        <option>台中市</option>
+									        <option>彰化縣</option>
+									        <option>南投縣</option>
+									        <option>雲林縣</option>
+									        <option>嘉義縣市</option>
+									        <option>台南市</option>
+									        <option>高雄市</option>
+									        <option>屏東縣</option>
+									        <option>宜蘭縣</option>
+									        <option>花蓮縣</option>
+									        <option>台東縣</option>
+									        <option>離島地區</option>
+					          			</select>
+								        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+								        <div class="help-block with-errors"></div>
+					          		</div>
+					          	</div>
+							  </div>
+							  <div class="row">
+					          	<div class="col-md-12 form-group has-feedback">
+					          		<label for="focusedInput" class="control-label col-xs-3">黑咖啡口味喜好</label>
+					          		<div class="col-xs-9 taste">
+									    <label class="form-check-label">
+									      <input type="checkbox" class="favor" name="Taste" value="苦澀">
+									      苦澀
+									    </label>
+									    <label class="form-check-label">
+									      <input type="checkbox" class="favor" name="Taste" value="微淡">
+									      微淡
+									    </label>
+									    <label class="form-check-label">
+									      <input type="checkbox" class="favor" name="Taste" value="偏酸">
+									      偏酸
+									    </label>
+									    <label class="form-check-label">
+									      <input type="checkbox" class="favor" name="Taste" value="不太喝黑咖啡">
+									      不太喝黑咖啡
+									    </label>
+								        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+								        <div class="help-block with-errors"></div>
+								        <input type="hidden" required h id="TasteInput">
+					          		</div>
+					          	</div>
+							  </div>
+					          <div class="row">
+					          	<div class="col-md-6 col-xs-12 form-group has-feedback">
+					          		<label for="focusedInput" class="control-label col-xs-3">手機</label>
+					          		<div class="col-xs-9">
+						          		<input type="tel" class="form-control"  id="PhoneInput" placeholder="請填手機號碼" required pattern="[0-9]{10}" data-error="請填入有效手機號碼" >		          	  		
+									        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+									        <div class="help-block with-errors"></div>
+					          		</div>
+					          	</div>
+					          	<div class="col-md-6 col-xs-12 form-group has-feedback">
+					          		<label for="focusedInput" class="control-label col-xs-3">Email</label>
+					          		<div class="col-xs-9">
+					          			<input type="email" class="form-control"  id="EmailInput" placeholder="請填email" required data-error="請填入有效電子信箱">	
+								        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+								        <div class="help-block with-errors"></div>
+					          		</div>
+					          	</div>
+					      	  <div class="col-md-12 col-xs-12 form-group has-feedback">
+								<div class="form-check">
+								    <label class="form-check-label">
+								      <input type="checkbox" class="form-check-input" checked id="intrestInput">
+								      我對推薦的產品有興趣 願意收到商品資訊
+								    </label>
+								</div>
+
+					      	  </div>
+					      	  <div class="col-md-12 col-xs-12 form-group has-feedback">
+								<div class="form-check">
+								    <label class="form-check-label">
+								      <input type="checkbox" class="form-check-input" required  data-error="請確認">
+								      我同意將個人資料提供主辦單位作為中獎聯絡用途
+								        <div class="help-block with-errors"></div>
+								    </label>
+								</div>
+
+					      	  </div>
+					    		<button type="submit" class="btn btn-sendform btn-lg col-sm-12 col-xs-12 send send_btn" id="sendform_btn" onclick="sendform();fbq('track', 'CompleteRegistration', {value: 1.00,currency: 'USD'});">送出表單</button>
+					      	  </div>
+					      	</form>
+						</div>
+			        </div>
+			      </div>
+			      
+			    </div>
+			  </div>
+  	<!-- secret -->
+  		<iframe id="secret_iframe" name="secret_iframe" style="display: none"></iframe>
+
+						</div>
+  <script type="text/javascript">
+(function($){
+  	  	$(document).ready(function(){
+
+    $('.favor').on('click', function(){
+  var selected = [];
+  $('.taste input:checked').each(function() {
+       selected.push($(this).val());
+  });
+    $("#TasteInput").val(selected);
+  });
+});
+  	  })(jQuery);
+  </script>

@@ -1,0 +1,46 @@
+﻿
+<div class="modal fade" id="Coffeelike" role="dialog">
+		  
+			    <div class="modal-dialog modal-md">
+			    
+			      <!-- Modal content-->
+			      <div class="modal-content">
+			      <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <div class="modal-footer">
+			        	   <div class="modal-frame likef">
+				        	   <p class="form_subtitle">抽獎前請先按讚!</p>
+						       <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fucccoffeetaiwan%2F%3Ffref%3Dts&tabs&width=320&height=120&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1365280566845661" width="320" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+
+					   			<button type="submit" class="btn btn-sendform btn-lg col-sm-6 col-xs-6 send send_btn" id="likeone" style="margin-top: 50px;float: none;">下一步</button>
+					    
+							</div>
+			        </div>
+			      </div>
+			      
+			    </div>
+			  </div>
+  	<!-- secret -->
+  		<iframe id="secret_iframe" name="secret_iframe" style="display: none"></iframe>
+
+						</div>
+  <script type="text/javascript">
+(function($){
+  	  	$(document).ready(function(){
+
+    $('.favor').on('click', function(){
+  var selected = [];
+  $('.taste input:checked').each(function() {
+       selected.push($(this).val());
+  });
+    $("#TasteInput").val(selected);
+  });
+});
+  	  })(jQuery);
+	// 抽獎like //
+  $("#likeone").click(function(){
+     $('#Coffeelike').modal('hide');
+     $('#CoffeeDraw').modal('show');
+     setTimeout(function(){$("body").attr("class", "modal-open");}, 1000);
+  });
+  </script>

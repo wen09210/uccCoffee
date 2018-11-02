@@ -1,0 +1,75 @@
+﻿<div class="modal fade" id="CoffeeDraw3" role="dialog">
+          <div class="modal-dialog modal-lg">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <div class="modal-footer">
+              	<div class="modal-frame">
+                    <div class="col-md-12"><p class="form_subtitle">凡購買UCC精品咖啡，登錄發票<span class="word_break">就有機會得到UCC膠囊咖啡機</span></p>
+                    </div> 
+                    <form class="form form-horizontal" role="form" id="myform" data-toggle="validator" action="#" target="secret_iframe">
+                        <div class="row">
+                        	<div class="col-md-6 col-xs-12 form-group has-feedback">
+                        		<label for="focusedInput" class="control-label col-xs-3">姓名</label>
+                        		<div class="col-xs-9">
+                        			<input type="text"  class="form-control"  id="Name2Input" placeholder="請填正確姓名"  required data-error="請輸入中文，不接受英文及數字，最短2個字" pattern="^[\u4e00-\u9fa5]+$" minlength="2" name="txtName">
+              			        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              			        <div class="help-block with-errors"></div>
+                        		</div>
+                        	</div>
+                        	<div class="col-md-6 col-xs-12 form-group has-feedback">
+                        		<div class="col-xs-3 control-label ">登記發票號碼</div>
+                        		<div class="col-xs-9">
+                        			<input type="text" class="form-control"  id="InvoiceInput" placeholder="如：TF-80640999" required pattern="[A-Za-z]{2}[\-]{1}[0-9]{8}" data-error="請填入有效發票號碼，如：TF-80640999" >	
+              			        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              			        <div class="help-block with-errors"></div>
+                        		</div>
+                        	</div>
+                    	  </div>
+                        <div class="row">
+                        	<div class="col-md-6 col-xs-12 form-group has-feedback">
+                        		<div class="col-xs-3 control-label" for="focusedInput">手機</div>
+                        		<div class="col-xs-9">
+              	          		<input type="tel" class="form-control"  id="Phone2Input" placeholder="請填手機號碼" required pattern="[0-9]{10}" data-error="請填入有效手機號碼" >		          	  		
+              				        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              				        <div class="help-block with-errors"></div>
+                        		</div>
+                        	</div>
+                        	<div class="col-md-6 col-xs-12 form-group has-feedback">
+                        		<div class="col-xs-3 control-label" for="focusedInput">email</div>
+                        		<div class="col-xs-9">
+                        			<input type="email" class="form-control"  id="Email2Input" placeholder="請填email" required data-error="請填入有效電子信箱">	
+              			        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              			        <div class="help-block with-errors"></div>
+                        		</div>
+                        	</div>
+                    	  <div class="col-md-12 col-xs-12 form-group has-feedback">
+              			<div class="form-check">
+              			    <label class="form-check-label">
+              			      <input type="checkbox" class="form-check-input" checked id="intrestInput">
+              			      我對推薦的產品有興趣 願意收到商品資訊
+              			    </label>
+              			</div>
+
+                    	  </div>
+                    	  <div class="col-md-12 col-xs-12 form-group has-feedback">
+              			<div class="form-check">
+              			    <label class="form-check-label">
+              			      <input type="checkbox" class="form-check-input" required  data-error="請確認">
+              			      我同意將個人資料提供主辦單位作為中獎聯絡用途
+              			        <div class="help-block with-errors"></div>
+              			    </label>
+              			</div>
+
+                    	  </div>
+                  		<button type="submit" class="btn btn-sendform btn-lg col-sm-12 col-xs-12 send send_btn" id="sendform_btn2" onclick="sendform2();fbq('track', 'CompleteRegistration', {value: 1.00,
+currency: 'USD'
+});">送出表單</button>
+                    	  </div>
+                    	</form>
+              	</div>
+              </div>
+            </div>
+          </div>
+</div>
